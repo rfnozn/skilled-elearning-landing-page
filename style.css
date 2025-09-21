@@ -8,6 +8,14 @@
 
   --gradient-clr-pink: linear-gradient(#ff6f48, #f02aa6);
   --gradient-clr-purple: linear-gradient(#4851ff, #f02aa6);
+
+  --fs-1: clamp(2.5rem, 1.9966442953020134rem + 2.1476510067114094vw, 3.5rem);
+  --fs-2: clamp(2rem, 1.7483221476510067rem + 1.0738255033557047vw, 2.5rem);
+  --fs-3: clamp(1.5rem, 1.2483221476510067rem + 1.0738255033557047vw, 2rem);
+  --fs-4: clamp(1.25rem, 1.1241610738255035rem + 0.5369127516778524vw, 1.5rem);
+  --fs-5: 1.125rem;
+  --fs-6: clamp(0.875rem, 0.8120805369127517rem + 0.2684563758389262vw, 1rem);
+  --fs-7: 1.125rem;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
