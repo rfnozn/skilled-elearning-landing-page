@@ -1,3 +1,12 @@
+:root {
+  --clr-blue-900: #13183f;
+  --clr-blue-600: #666ca3;
+  --clr-pink-600: #f74780;
+  --clr-pink-300: #ffa7c3;
+  --clr-grey: #83869a;
+  --clr-white: #ffffff;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
