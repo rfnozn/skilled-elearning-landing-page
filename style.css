@@ -135,3 +135,20 @@ h6 {
   font-weight: 800;
   src: url("assets/fonts/plus-jakarta-sans-v12-latin/plus-jakarta-sans-v12-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+.wrapper {
+  padding-inline: 20px;
+}
+
+@media screen and (min-width: 48em) {
+  .wrapper {
+    padding-inline: 40px;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .wrapper {
+    max-width: 70rem;
+    margin-inline: auto;
+  }
+}
