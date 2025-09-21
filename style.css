@@ -5,6 +5,9 @@
   --clr-pink-300: #ffa7c3;
   --clr-grey: #83869a;
   --clr-white: #ffffff;
+
+  --gradient-clr-pink: linear-gradient(#ff6f48, #f02aa6);
+  --gradient-clr-purple: linear-gradient(#4851ff, #f02aa6);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
