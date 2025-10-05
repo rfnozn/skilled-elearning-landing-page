@@ -118,8 +118,41 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .wrapper {
   width: calc(100% - 1.25rem);
   max-width: 1120px;
   margin-inline: auto;
+}
+
+.header .wrapper {
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: clamp(4.956rem, 3.964vw + 4.163rem, 6.938rem);
+}
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 1.75rem;
+  color: var(--clr-white);
+  font-size: var(--fs-7);
+  font-weight: 700;
+}
+
+.button.dark {
+  background-color: var(--clr-blue-900);
+  transition: background-color 250ms ease-in-out;
+}
+
+.button.dark:hover {
+  background-color: var(--clr-blue-600);
 }
