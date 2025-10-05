@@ -4,6 +4,18 @@
 }
 
 /* 2. Remove default margin */
+:root {
+  --clr-blue-900: #13183F;
+  --clr-blue-600: #666CA3;
+  --clr-pink-600: #F74780;
+  --clr-pink-300: #FFA7C3;
+  --clr-grey: #83869A;
+  --clr-white: #FFF;
+
+  --clr-gradient-pink: linear-gradient(#FF6F48, #F02AA6);
+  --clr-gradient-purple: linear-gradient(#4851FF, #F02AA6);
+}
+
 * {
   margin: 0;
 }
