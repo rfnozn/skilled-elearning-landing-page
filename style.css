@@ -104,9 +104,11 @@ p, h1, h2, h3, h4, h5, h6 {
 /* 9. Improve line wrapping */
 p {
   text-wrap: pretty;
+  color: var(--clr-grey);
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: var(--clr-blue-900);
   line-height: 1.2;
   text-wrap: balance;
 }
@@ -124,9 +126,21 @@ a {
 }
 
 .wrapper {
-  width: calc(100% - 1.25rem);
-  max-width: 1120px;
-  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding-inline: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    padding-inline: 0;
+    max-width: 1120px;
+    margin-inline: auto;
+  }
 }
 
 .header .wrapper {
@@ -146,13 +160,94 @@ a {
   color: var(--clr-white);
   font-size: var(--fs-7);
   font-weight: 700;
+  transition: 250ms ease-in-out;
+  transition-property: background-color, opacity;
 }
 
 .button.dark {
   background-color: var(--clr-blue-900);
-  transition: background-color 250ms ease-in-out;
 }
 
 .button.dark:hover {
   background-color: var(--clr-blue-600);
+}
+
+.button.pink {
+  background: var(--clr-gradient-pink);
+}
+
+.button.pink:hover {
+  opacity: 0.5;
+}
+
+.hero {
+  padding-block: 4rem;
+}
+
+.hero__text {
+  padding-bottom: 3rem;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: var(--fs-1);
+}
+
+.hero__description {
+  padding-block: 1.5rem 2.5rem;
+  font-weight: 500;
+  font-size: var(--fs-5);
+  max-width: 25ch;
+}
+
+@media screen and (min-width: 48rem) {
+  .hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    overflow-x: clip;
+  }
+
+  .hero__text {
+    padding-block: 41.5px;
+  }
+
+  .hero__title {
+    min-width: 16ch;
+  }
+
+  .hero__text.wrapper {
+    padding-inline-end: 0;
+  }
+
+  .hero__picture {
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    translate: 44% -25%;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    max-width: 1120px;
+    margin-inline: auto;
+    gap: 32px;
+    overflow-x: visible;
+  }
+
+  .hero__text {
+    padding-block: 150px;
+    min-width: 35ch;
+  }
+
+  .hero__picture {
+    translate: 44% -22%;
+  }
 }
